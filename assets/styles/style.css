@@ -333,7 +333,7 @@ h6 {
 }
 
 section {
-  padding: 60px 0;
+  padding: 30px 0;
   overflow: hidden;
 }
 
@@ -344,7 +344,7 @@ section u {
 
 .section-title {
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 
 .section-title h2 {
@@ -423,7 +423,6 @@ section u {
   border-radius: 50%;
 }
 
-/* CV start  */
 .cv-title {
   font-size: 26px;
   font-weight: 700;
@@ -485,6 +484,80 @@ section u {
 }
 
 /* CV start  */
+/*--------------------------------------------------------------
+# Skills
+--------------------------------------------------------------*/
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+
+.skills .progress .skill {
+  padding: 10px 0;
+  margin: 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+}
+
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+  background: #f2f3f5;
+}
+
+.skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+  background-color: #ff0000;
+}
+
+.skills .skill-header {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.skills .skill-header h4 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #45505b;
+}
+
+.skills .skill-header h4::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 190px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 95px);
+}
+
+.skills .skill-header h4::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #bb0505;
+  bottom: 0;
+  left: calc(50% - 30px);
+}
+
 /* soft skill start  */
 .soft-skill .content h3 {
   font-weight: 700;
@@ -522,8 +595,12 @@ section u {
   margin-bottom: 0;
 }
 
-/* soft skill end  */
-.hover-effect {
+/*  Portfolio */
+.portfolio {
+  padding: 0;
+}
+
+.portfolio .hover-effect {
   width: 100%;
   height: 100%;
   margin-bottom: 15px;
@@ -534,7 +611,7 @@ section u {
   cursor: default;
 }
 
-.hover-effect .overlay {
+.portfolio .hover-effect .overlay {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -617,7 +694,7 @@ section u {
           flex-direction: column;
 }
 
-form {
+.form-wrapper form {
   background: #db0f0f;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -632,14 +709,14 @@ form {
   border-radius: 10px;
 }
 
-form h3 {
+.form-wrapper form h3 {
   color: #fff;
   font-weight: 800;
   margin-bottom: 20px;
 }
 
-form input,
-form textarea {
+.form-wrapper form input,
+.form-wrapper form textarea {
   border: 0;
   margin: 10px 0;
   padding: 20px;
@@ -649,7 +726,7 @@ form textarea {
   border-radius: 10px;
 }
 
-form button {
+.form-wrapper form button {
   padding: 15px;
   background: #ff5361;
   color: #fff;
@@ -666,7 +743,7 @@ form button {
   color: #45505b;
   font-size: 14px;
   text-align: center;
-  padding: 30px 0;
+  padding: 15px 0;
 }
 
 #footer h3 {
@@ -675,47 +752,21 @@ form button {
   position: relative;
   font-family: "Poppins", sans-serif;
   padding: 0;
-  margin: 0 0 15px 0;
+  margin: 0 0 0px 0;
 }
 
 #footer p {
   font-size: 15;
   font-style: italic;
   padding: 0;
-  margin: 0 0 40px 0;
+  margin: 0 0 10px 0;
 }
 
-#footer .social-links {
-  margin: 0 0 40px 0;
-}
-
-#footer .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #0563bb;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-#footer .social-links a:hover {
-  background: #0678e3;
-  color: #fff;
-  text-decoration: none;
-}
-
-#footer .copyright {
+.copyright {
   margin: 0 0 5px 0;
 }
 
-#footer .credits {
+.credits {
   font-size: 13px;
 }
 /*# sourceMappingURL=style.css.map */

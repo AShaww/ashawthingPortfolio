@@ -1,3 +1,12 @@
+let $skill = $('.skills');
+$skill.waypoint(function() {
+    let el = this.element;
+    var children = $(el).find(".progress-bar");
+    $(children).each(function() { // <- make sure getting only children elements
+        $(this).css("width", $(this).attr("aria-valuenow") + '%');
+    });
+}, { offset: '80%' });
+
 (function() {
     "use strict";
     const select = (el, all = false) => {
